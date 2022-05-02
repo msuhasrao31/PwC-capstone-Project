@@ -25,6 +25,7 @@ kubectl create -f deployment.yaml
 kubectl get pods
 
 ```
+```
 ### App deployment on the cluster using Terraform
 
   360  cd app-deploy-tf/
@@ -56,3 +57,4 @@ kubectl get pods
   386  terraform destroy --auto-approve
   387  ls
   388 history
+```
