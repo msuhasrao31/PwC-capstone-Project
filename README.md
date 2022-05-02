@@ -25,7 +25,9 @@ kubectl create -f deployment.yaml
 kubectl get pods
 
 ```
-cd app-deploy-tf/
+### App deployment on the cluster using Terraform
+
+  360  cd app-deploy-tf/
   361  vi provider.tf
   362  cd ..
   363  kubectl config get-contexts
@@ -53,4 +55,4 @@ cd app-deploy-tf/
   385  kubectl get services my-service
   386  terraform destroy --auto-approve
   387  ls
-  388  history
+  388 history
