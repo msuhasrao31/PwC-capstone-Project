@@ -51,7 +51,6 @@ kubectl get pods
   380  terraform plan
   381  terraform apply --auto-approve
   382  kubectl get deployments
-  383  kubectl expose deployment hello-world --type=LoadBalancer --name=my-service
   384  kubectl expose deployment team-5-webapp --type=LoadBalancer --name=my-service
   385  kubectl get services my-service
   386  terraform destroy --auto-approve
