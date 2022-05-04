@@ -59,3 +59,31 @@ kubectl get pods
   388  history
 
 ```
+## database-management in kubernetes
+
+```
+  102  mkdir database-automation
+  104  cd database-automation/
+  108  vi mysql_service.yaml 
+  109  kubectl create -f mysql_service.yaml
+  117  vi mysql_deployment.yaml
+  118  kubectl create -f mysql_deployment.yaml
+  119  vi persistence_volume.yaml 
+  139  kubectl create -f persistence_volume.yaml 
+  140  vi pvClaim.yaml
+  141  kubectl create -f pvClaim.yaml 
+  142  kubectl get pods
+  144  kubectl apply -f persistence_volume.yaml pvClaim.yaml 
+  145  kubectl apply -f persistence_volume.yaml
+  146  kubectl apply -f pvClaim.yaml 
+  147  clear
+  148  kubectl apply -f mysql_deployment.yaml 
+  149  clear
+  150  kubectl get deployments
+  151  kubectl get pods
+  152  kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
+  153  clear
+  154  ls -a
+  155  cd ..
+  156  ls
+  157  history
