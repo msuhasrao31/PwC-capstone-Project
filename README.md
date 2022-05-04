@@ -56,6 +56,6 @@ kubectl get pods
   385  kubectl get services my-service
   386  terraform destroy --auto-approve
   387  ls
-  388 history
+  388  history
 
 ```
