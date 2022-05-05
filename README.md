@@ -3,25 +3,25 @@ Provisioning kubernetes with Terraform
 
 This project helps to provision the kubernetes and manage the kubernetes deployment with the help of terraform in Azure cloud
 
-## Inital setup in AZURE CLI
+## Initial setup in AZURE CLI
 ```
-open azure portal
-setup terraform
-1. Redeem Azure Pass
-2. Open Azure Cloud Shell - Bash Prompt
-Now Create Azure Contributor Service Principal for terraform Auth.
-az login 
-az account list -o table 
-az account set -s "<subscription-id>"
-az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<subscription_id>"
-Export the Azure Auth Variable in your bash RC.
-export ARM_CLIENT_SECRET="<<password>>"
-export ARM_CLIENT_ID="<<appID>>"
-export ARM_SUBSCRIPTION_ID="<<subscriptionID>>"
-export ARM_TENANT_ID="<<tenant>>"
-Initialize the Bashrc Variables
-source ~/.bashrc
-git clone into azure cli
+1 open azure portal
+2 setup terraform
+3 Redeem Azure Pass
+4 Open Azure Cloud Shell - Bash Prompt
+5 Now Create Azure Contributor Service Principal for terraform Auth.
+6 az login 
+7 az account list -o table 
+8 az account set -s "<subscription-id>"
+9 az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<subscription_id>"
+## Export the Azure Auth Variable in your bash RC.
+10 export ARM_CLIENT_SECRET="<<password>>"
+   export ARM_CLIENT_ID="<<appID>>"
+   export ARM_SUBSCRIPTION_ID="<<subscriptionID>>"
+   export ARM_TENANT_ID="<<tenant>>"
+11 Initialize the Bashrc Variables
+12 source ~/.bashrc
+13 git clone into azure cli
 
 ```
 ## Automate the kubernetes management using Terraform
