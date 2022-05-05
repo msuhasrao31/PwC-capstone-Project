@@ -86,7 +86,7 @@ kubectl get pods
   155  cd ..
   156  ls
   157  history
-
+```
 ## App deployment on cluster with Database and polyglot persistence
 
 ```
