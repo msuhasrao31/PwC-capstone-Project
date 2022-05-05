@@ -9,5 +9,5 @@ terraform {
 
 provider "kubernetes" {
   config_path    = "~/.kube/config"
-  config_context = "aks-Team-5"
+  config_context = "aks-Team-5-testing"
 }

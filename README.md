@@ -86,3 +86,15 @@ kubectl get pods
   155  cd ..
   156  ls
   157  history
+
+## App deployment on cluster with Database and polyglot persistence
+
+```
+  294  mkdir wordpress-mysql-deploy
+  295  cd wordpress-mysql-deploy/
+  316  kubectl apply -k ./
+  317  kubectl get secrets
+  318  kubectl get pvc
+  319  kubectl get pods
+  320  kubectl get services wordpress
+```
