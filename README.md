@@ -76,7 +76,7 @@ kubectl get pods
   388  history
 
 ```
-## database-management in kubernetes
+## Database-management in kubernetes
 
 ```
   102  mkdir database-automation
